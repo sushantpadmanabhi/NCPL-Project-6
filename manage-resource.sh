@@ -9,9 +9,9 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-RESOURCE_GROUP = "NCPL-Project-6"
-LOCATION = "centralindia"
-STORAGE_ACCUNT_NAME = "NCPLTestStorageAcc"
+RESOURCE_GROUP="NCPL-Project-6"
+LOCATION="centralindia"
+STORAGE_ACCUNT_NAME="NCPLTestStorageAcc"
 
 echo "Creating a Storage Account $STORAGE_ACCOUNT_NAME in Resource Group $RESOURCE_GROUP ..."
 
