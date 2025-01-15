@@ -36,7 +36,7 @@ fi
 
 echo "Creating a Windows Virtual machine: $VM_NAME in Resource Group $RESOURCE_GROUP"
 
-az vm create --resource-group "$RESOURCE_GROUP" --name "$VM_NAME" --image "Win2019Datacenter" --admin-username "$ADMIN_USERNAME" --admin-password "$ADMIN_PASSWORD" --size "Standard_B2s"
+az vm create --resource-group "$RESOURCE_GROUP" --name "$VM_NAME" --image "UbuntuLTS" --admin-username "$ADMIN_USERNAME" --admin-password "$ADMIN_PASSWORD" --size "Standard_B2s"
 
 if [ $? -ne 0 ]; then
   echo "Failed to create a Virtual Machine. Please check provided Parameters"
