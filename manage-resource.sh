@@ -1,13 +1,13 @@
 #!/bin/bash
 
-echo "Logging in to Azure. Please follow the prompt to authenticate."
+#echo "Logging in to Azure. Please follow the prompt to authenticate."
 
-az login
+#az login
 
-if [ $? -ne 0 ]; then
-  echo "Login Failed. Please Try Again"
-  exit 1
-fi
+#if [ $? -ne 0 ]; then
+#  echo "Login Failed. Please Try Again"
+#  exit 1
+#fi
 
 RESOURCE_GROUP="NCPL-Project-6"
 LOCATION="centralindia"
@@ -38,7 +38,7 @@ echo "Deleting a Resource Group"
 echo 
 
 read -p "Enter the name of the resource group to delete: " RESOURCE_GROUP_TO_DELETE
-read -p "Are you sure you want to delete the resource group $RESOURCE_GROUP_TO_DELETE ? (yes/no)" CONFIRM
+read -p "Are you sure you want to delete the resource group $RESOURCE_GROUP_TO_DELETE? (yes/no): " CONFIRM
 
 if [ "$CONFIRM" == yes ]; then
     echo "Deleting the resource group $RESOURCE_GROUP_TO_DELETE ..."
@@ -52,7 +52,7 @@ if [ "$CONFIRM" == yes ]; then
     fi 
 else
     echo "Deletion of Resource Group $RESOURCE_GROUP_TO_DELETE Cancelled"
-
+fi 
 
 
 
