@@ -11,7 +11,7 @@ fi
 
 RESOURCE_GROUP="NCPL-Project-6"
 LOCATION="centralindia"
-STORAGE_ACCOUNT_NAME="ncplstorageaccount"
+STORAGE_ACCOUNT_NAME="ncplprjt6strgacc"
 
 echo "Creating a Storage Account $STORAGE_ACCOUNT_NAME in Resource Group $RESOURCE_GROUP ..."
 
